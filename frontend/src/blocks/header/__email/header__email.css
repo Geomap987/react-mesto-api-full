@@ -1,0 +1,9 @@
+.header__email {
+    display: flex;
+    color: white;
+    font-size: 18px;
+      line-height: 22px;
+      font-weight: 500;
+      align-items: center;
+      margin-right: 24px;
+  }

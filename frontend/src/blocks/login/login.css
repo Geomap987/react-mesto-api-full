@@ -1,0 +1,14 @@
+@import url(./__welcome/login__welcome.css);
+@import url(./__form/login__form.css);
+@import url(./__input/login__input.css);
+@import url(./__button-container/login__button-container.css);
+@import url(./__link/login__link.css);
+@import url(./__signup/login__signup.css);
+@import url(./__signup-link/login__signup-link.css);
+
+.login {
+    display: flex;
+    flex-direction: column;
+    min-height: 880px;
+    align-items: center;
+}

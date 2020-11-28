@@ -1,0 +1,8 @@
+.header__button-text {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    line-height: 22px;
+    font-weight: 400;
+    align-items: center;
+}

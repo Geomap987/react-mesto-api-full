@@ -1,0 +1,6 @@
+.profile__text-container {
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

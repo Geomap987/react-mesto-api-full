@@ -1,0 +1,8 @@
+.profile__photo-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-width: 128px;
+    min-height: 128px;
+    
+}

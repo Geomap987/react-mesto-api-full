@@ -1,0 +1,17 @@
+@import url(./__logo/header__logo.css);
+@import url(./__button/header__button.css);
+@import url(./__button-text/header__button-text.css);
+@import url(./__email/header__email.css);
+@import url(./__container/header__container.css);
+
+
+.header {
+  max-width: 882px;
+  margin: 0 auto;
+  border-bottom: 1px solid #545454;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+

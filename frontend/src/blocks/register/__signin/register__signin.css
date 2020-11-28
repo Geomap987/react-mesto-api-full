@@ -1,0 +1,12 @@
+.register__signin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    color: white;
+}
+
+.register__signin p {
+    margin: 0;
+    margin-right: 12px;
+  }

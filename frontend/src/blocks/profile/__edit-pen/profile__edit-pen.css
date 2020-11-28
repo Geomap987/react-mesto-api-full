@@ -1,0 +1,21 @@
+.profile__edit-pen {
+    width: 128px;
+    height: 128px;
+    background-color: rgba(0, 0, 0);
+    background-image: url(../../../images/vector.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    left:  0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+  
+.profile__edit-pen:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+    

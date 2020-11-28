@@ -1,0 +1,28 @@
+.photo-grid__like-icon {
+    background: url(../../../images/like.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 21px;
+    height: 21px;
+    border: none;
+    transition: opacity 1s ease;
+    margin-bottom: 3px;
+}
+
+.photo-grid__like-icon:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+
+.photo-grid__like-icon_active {
+    background: url(../../../images/likeactive.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 21px;
+    height: 21px;
+    border: none;
+    transition: opacity 1s ease;
+    margin-bottom: 3px;
+}

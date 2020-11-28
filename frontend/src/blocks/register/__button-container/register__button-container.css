@@ -1,0 +1,9 @@
+.register__button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 186px;
+    background-color: white;
+    border: none;
+    border-radius: 2px;
+    height: 50px;
+}

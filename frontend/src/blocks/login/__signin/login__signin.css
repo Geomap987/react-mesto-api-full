@@ -1,0 +1,12 @@
+.login__signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.login__signup p {
+    margin: 0;
+    margin-right: 12px;
+    color: white;
+}

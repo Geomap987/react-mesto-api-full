@@ -108,5 +108,5 @@ class Api {
   }
   
   export const api = new Api({
-    address: 'http://api.lumpyspace.students.nomoredomains.rocks',
+    address: 'https://api.lumpyspace.students.nomoredomains.rocks',
   });

@@ -3,6 +3,7 @@
 /* eslint-disable linebreak-style */
 const Card = require('../models/card');
 const Error400 = require('../errors/Error400');
+const Error403 = require('../errors/Error403');
 const Error404 = require('../errors/Error404');
 const Error500 = require('../errors/Error500');
 
@@ -18,15 +19,29 @@ const getCards = (req, res, next) => {
 
 const deleteCardById = (req, res, next) => {
   const { cardId } = req.params;
-  Card.findByIdAndRemove({ _id: cardId })
-    .then((card) => {
-      if (!card) {
-        const error404 = new Error404('Нет карточки с таким id');
-        next(error404);
-      }
-      res.send(card);
+  const { id } = req.user;
+  Card.findOne({ _id: cardId }).then((card) => {
+    const ownerId = card.owner._id;
+    const ownerIdString = ownerId.toString();
+    if (ownerIdString !== id) {
+      throw new Error403();
+    }
+    if (!card) {
+      const error404 = new Error404('Нет карточки с таким id');
+      next(error404);
+    }
+  })
+    .then(() => {
+      Card.findByIdAndRemove({ _id: cardId })
+        .then((item) => {
+          res.send(item);
+        });
     })
     .catch((err) => {
+      if (err.statusCode === 403) {
+        const error403 = new Error403('Нельзя удалять чужую карточку');
+        next(error403);
+      }
       if (err.kind === undefined) {
         const error404 = new Error404('Нет карточки с таким id');
         next(error404);

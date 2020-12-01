@@ -1,7 +1,7 @@
 import { getToken } from './token';
 
 class Api {
-    constructor({ address, token }) {
+    constructor({ address }) {
       this._address = address;
     }
   
@@ -110,3 +110,4 @@ class Api {
   export const api = new Api({
     address: 'https://api.lumpyspace.students.nomoredomains.rocks',
   });
+

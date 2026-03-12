@@ -1,9 +1,3 @@
-# react-mesto-api-full
+This repository contains the **Mesto** application, including both the frontend and backend parts of the project. The application supports user registration and authorization, as well as operations related to cards and users.
 
-## <https://lumpyspace.ml>
-
-## Сервер API расположен по адресу
-## <https://lumpyspace-api.ml>
-
-Репозиторий для приложения проекта `Mesto`, включающий фронтенд и бэкенд части приложения со следующими возможностями: авторизации и регистрации пользователей, операции с карточками и пользователями. Бэкенд расположите в директории `backend/`, а фронтенд - в `frontend/`. 
-
+The backend is located in the `backend/` directory, and the frontend is located in the `frontend/` directory.

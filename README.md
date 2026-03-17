@@ -35,3 +35,17 @@ The project includes the following functionality:
 - CSS Grid
 - API integration for working with server data
 - Popup handling through conditional class modifiers
+
+## Screenshots
+
+### Main Page
+![Main Page](./screenshots/Main%20Page.png)
+
+### Sign In Page
+![Sign In Page](./screenshots/Signin_page.png)
+
+### Edit Profile Page
+![Edit Profile Page](./screenshots/Edit_profile_page.png)
+
+### Add Card Page
+![Add Card Page](./screenshots/Add_card_page.png)
